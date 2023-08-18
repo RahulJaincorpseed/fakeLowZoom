@@ -1,0 +1,13 @@
+@import "../SCSS/Colors.scss";
+
+.breadcrum {
+  link {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    color: $blue;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

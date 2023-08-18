@@ -1,0 +1,74 @@
+@import "../SCSS/Colors.scss";
+@import "../SCSS/MixCode.scss";
+
+.add-people-box {
+  padding: 20px 0px;
+  .add-team {
+    @include all-between;
+    border-bottom: 1px solid $grayOne;
+    padding-bottom: 10px;
+    .team-text {
+      h4 {
+        @include font-three;
+        text-align: center;
+        letter-spacing: 0.84px;
+        color: $lightBlack;
+      }
+    }
+    .team-model {
+      .add-team-modal {
+        @include font-two;
+        text-align: center;
+        letter-spacing: 0.84px;
+        color: $blue;
+        background-color: $white;
+        padding: 8px 16px;
+        border-radius: 10px;
+        border: 1px solid $white;
+        &:hover {
+          outline: none;
+          border: 1px solid $lightBlue;
+        }
+      }
+    }
+    .add-team-body {
+      padding: 0px 50px;
+      background: $white;
+      border-radius: 40px;
+      width: 70vw;
+    }
+    .all-between-items {
+      @include all-between;
+      width: 100%;
+      margin-top: 20px;
+      h2 {
+        @include font-two;
+        text-align: center;
+        letter-spacing: 0.84px;
+        color: $lightBlack;
+        margin-left: 10px;
+      }
+      .fa-gear {
+        color: $blue;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .add-people-box {
+    .add-team {
+      .team-text {
+        h4 {
+          font-size: 20px;
+        }
+      }
+      .team-model {
+        .add-team-modal {
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
